@@ -24,26 +24,28 @@
 #             print(y)
 
 
-def q5():
-    a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-    b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-    same=[]
-    for x in a:
-        for y in b:
-            if x==y:
-                same.append(x)
-    print(same)
+# def q5():
+#     a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+#     b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+#     same=[]
+#     for x in a:
+#         for y in b:
+#             if x==y:
+#                 same.append(x)
+#     print(same)
 
-def q6():
-    user=input("insert your statements")
-    check =0
-    for i in range(0,int(len (user)/2)):
-        if user[i] !=user[len(user)-i-1] :
-            check=1
-    if check==0:
-        print("it is palyndrome")
-    else:
-        print("it is not palyndrome")
+# def q6():
+#     user=input("insert your statements")
+#     check =0
+#     for i in range(0,int(len (user)/2)):
+#         if user[i] !=user[len(user)-i-1] :
+#             check=1
+#     if check==0:
+#         print("it is palyndrome")
+#     else:
+#         print("it is not palyndrome")
+
+
             
     
 #q1()
@@ -51,4 +53,4 @@ def q6():
 #q3()
 #q4()
 #q5()
-q6()
+#q6()
