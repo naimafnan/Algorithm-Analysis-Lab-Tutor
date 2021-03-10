@@ -46,7 +46,10 @@
 #         print("it is not palyndrome")
 
 def q7():
-    
+    a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+    for x in a:
+        if x%2==0:
+            print(x,end=" ")
             
     
 #q1()
@@ -55,3 +58,4 @@ def q7():
 #q4()
 #q5()
 #q6()
+q7()
