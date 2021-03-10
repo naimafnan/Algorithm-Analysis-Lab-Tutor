@@ -45,8 +45,8 @@
 #     else:
 #         print("it is not palyndrome")
 
-
 def q7():
+    
             
     
 #q1()
