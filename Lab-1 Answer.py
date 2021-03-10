@@ -1,3 +1,4 @@
+import random
 # def q1():
 #     name=input("enter your name :")
 #     age=int(input("enter your age :"))
@@ -51,24 +52,34 @@
 #         if x%2==0:
 #             print(x,end=" ")
 
-def q8():
-    flag=True
-    while flag==True:
-        player1=eval(input("P1-Rock=[1] , Paper=[2] , Scissor=[3] ?"))
-        print()
-        player2=eval(input("P2-Rock=[1] , Paper=[2] , Scissor=[3] ?"))
-        if (player1==1 and player2==1) or (player1==2 and player2==2) or (player1==3 and player2==3):
-            print("player 1 and player 2 draw")
-        elif (player1==1 and player2==3) or (player1==2 and player2==1) and (player1==3 and player2==2):
-            print("Player 1 win")
-        elif (player1==1 and player2==2) or (player1==2 and player2==3) or (player1==3 and player2==1):
-            print("player 2 win")
-        print()
-        check=input("do you want to play again? [Y,N] :")
-        if (check=="N"):
-            flag=False
+# def q8():
+#     flag=True
+#     while flag==True:
+#         player1=eval(input("P1-Rock=[1] , Paper=[2] , Scissor=[3] ?"))
+#         print()
+#         player2=eval(input("P2-Rock=[1] , Paper=[2] , Scissor=[3] ?"))
+#         if (player1==1 and player2==1) or (player1==2 and player2==2) or (player1==3 and player2==3):
+#             print("player 1 and player 2 draw")
+#         elif (player1==1 and player2==3) or (player1==2 and player2==1) and (player1==3 and player2==2):
+#             print("Player 1 win")
+#         elif (player1==1 and player2==2) or (player1==2 and player2==3) or (player1==3 and player2==1):
+#             print("player 2 win")
+#         print()
+#         check=input("do you want to play again? [Y,N] :")
+#         if (check=="N"):
+#             flag=False
+def q9():
+    randomNumber=random.randint(1,9)
+    print(randomNumber)
+    user=int(input("Guess the random number: "))
+    if (randomNumber==user):
+        print("your guessed is exactly the same")
+    elif (randomNumber>user):
+        print("your guessed too Low, it's incorrect")
+    else:
+        print("your guessed too High, it's incorrect")
     
-
+    
 #q1()
 #q2()
 #q3()1111
@@ -76,4 +87,5 @@ def q8():
 #q5()
 #q6()
 #q7()
-q8()
+#q8()
+q9()
