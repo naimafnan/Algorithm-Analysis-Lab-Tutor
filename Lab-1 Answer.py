@@ -36,17 +36,19 @@ def q5():
 
 def q6():
     user=input("insert your statements")
-    check"";
-        for a in user:
-            check=check+a
-        if (check==user):
-            print(user+"it is a palindrome")
-        else:
-            print(user+"it is not a palindrome")
+    check =0
+    for i in range(0,int(len (user)/2)):
+        if user[i] !=user[len(user)-i-1] :
+            check=1
+    if check==0:
+        print("it is palyndrome")
+    else:
+        print("it is not palyndrome")
             
     
 #q1()
 #q2()
 #q3()
 #q4()
- q5()
+#q5()
+q6()
