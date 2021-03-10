@@ -68,18 +68,21 @@ import random
 #         check=input("do you want to play again? [Y,N] :")
 #         if (check=="N"):
 #             flag=False
-def q9():
-    randomNumber=random.randint(1,9)
-    print(randomNumber)
-    user=int(input("Guess the random number: "))
-    if (randomNumber==user):
-        print("your guessed is exactly the same")
-    elif (randomNumber>user):
-        print("your guessed too Low, it's incorrect")
-    else:
-        print("your guessed too High, it's incorrect")
+# def q9():
+#     randomNumber=random.randint(1,9)
+#     print(randomNumber)
+#     user=int(input("Guess the random number: "))
+#     if (randomNumber==user):
+#         print("your guessed is exactly the same")
+#     elif (randomNumber>user):
+#         print("your guessed too Low, it's incorrect")
+#     else:
+#         print("your guessed too High, it's incorrect")
     
-    
+def q10():
+    user=eval(input("enter a number: "))
+    naum
+
 #q1()
 #q2()
 #q3()1111
@@ -88,4 +91,4 @@ def q9():
 #q6()
 #q7()
 #q8()
-q9()
+#q9()
