@@ -79,16 +79,91 @@ import random
 #     else:
 #         print("your guessed too High, it's incorrect")
     
-def q10():
-    user=eval(input("enter a number: "))
-    naum
+# def q10():
+#     user=eval(input("enter a number: ")) #7
+#     divisor=user-1                       #7-1=6
+#     flag=True
 
+#     for divisor in range(divisor,1,-1):  #(6,1,-1)
+#         if(user!=1):
+#             if user%divisor==0: 
+#                 flag=False
+#     if flag==True:
+#         print(str(user)+ "is a prime number")
+#     else:
+#         print(str(user)+"is NOT a prime number")
+
+#Q11()
+# a = [5, 10, 15, 20, 25]
+# def firstLast(a):
+#     a = [5, 10, 15, 20, 25]
+#     b=[]
+#     b.append(a.pop(len(a)-1))
+#     return b
+# print(firstLast(a))
+
+#Q12
+# x=eval(input("enter the value of X: "))
+
+# def Fibonance(x):
+#     list=[0,1]
+#     for y in range(1,x-1,+1):
+#         list.append(list[y-1]+list[y])
+#         return list
+# print(Fibonance(x))
+
+#Q13
+# a=[2,4,6,8,10,2,4,6]
+# def Unduplicate():
+#     newList=[]
+#     for i in a:
+#         if i not in newList:
+#             newList.append(i)
+#     return newList
+# print(Unduplicate())
+
+#Q14
+# sentence=input("enter any statement: ")
+# a=sentence.split()
+# b=""
+# for i in a:
+#     b=i+" "+b
+# print(b)
+
+#Q15
+import time
+import string
+import random
+
+# lowercase
+# uppercase
+# numbers
+# symbol
+
+# printable - contains letter(uppercase&lowercase) + digits + punctuation
+
+
+def get_random_password(pass_len):
+    pass_char = string.ascii_letters + string.digits + string.punctuation
+    password = ''.join(random.choice(pass_char)
+                       for i in range(pass_len))
+    return password
+
+
+Starttime = time.time()
+pass_len = random.randint(10, 20)
+print("Password length : " + str(pass_len))
+print("Password : " + get_random_password(pass_len))
+Endtime = time.time()
+print("Time taken (s): " + str((Endtime - Starttime)*1000))
 #q1()
 #q2()
-#q3()1111
+#q3()
 #q4()
 #q5()
 #q6()
 #q7()
 #q8()
 #q9()
+#q10()
+#firstLast(a)   
