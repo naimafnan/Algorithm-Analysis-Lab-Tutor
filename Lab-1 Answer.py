@@ -45,17 +45,35 @@
 #     else:
 #         print("it is not palyndrome")
 
-def q7():
-    a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
-    for x in a:
-        if x%2==0:
-            print(x,end=" ")
-            
+# def q7():
+#     a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+#     for x in a:
+#         if x%2==0:
+#             print(x,end=" ")
+
+def q8():
+    flag=True
+    while flag==True:
+        player1=eval(input("P1-Rock=[1] , Paper=[2] , Scissor=[3] ?"))
+        print()
+        player2=eval(input("P2-Rock=[1] , Paper=[2] , Scissor=[3] ?"))
+        if (player1==1 and player2==1) or (player1==2 and player2==2) or (player1==3 and player2==3):
+            print("player 1 and player 2 draw")
+        elif (player1==1 and player2==3) or (player1==2 and player2==1) and (player1==3 and player2==2):
+            print("Player 1 win")
+        elif (player1==1 and player2==2) or (player1==2 and player2==3) or (player1==3 and player2==1):
+            print("player 2 win")
+        print()
+        check=input("do you want to play again? [Y,N] :")
+        if (check=="N"):
+            flag=False
     
+
 #q1()
 #q2()
-#q3()
+#q3()1111
 #q4()
 #q5()
 #q6()
-q7()
+#q7()
+q8()
